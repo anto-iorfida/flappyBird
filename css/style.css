@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(img/backgrounds-flappy-bird.jpg);
+    background-size: cover;
+}
+#doors{
+    position: absolute;
+    bottom: -85px;
+    right: 0;
+    width: 100%;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bird {
+    position: absolute;
+    width: 60px;
+    height: 44px;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+#bird img{
+    width: 60px;
+    height: 44px;
+}
+
+.pipe {
+    position: absolute;
+    width: 82px; /* Larghezza dei tubi */
+    background-color: transparent;
+     border: 2px solid red;/* Colore del bordo dei tubi */
+}
+
+
+#pipe-top {
+    top: 0; /* Posiziona il tubo superiore in alto */
+    height: 200px; /* Altezza iniziale del tubo superiore */
+    transform: rotate(180deg); /* Ruota il tubo superiore */
+}
+#pipe-top img{
+    position: relative;
+    left: -140px;
+    top: -16px;
+}
+
+#pipe-bottom {
+    bottom: 0; /* Posiziona il tubo inferiore in basso */
+    height: 100px; /* Altezza iniziale del tubo inferiore */
+}
+#pipe-bottom img{
+    position: relative;
+    left: -140px;
+    top: -36px;
+}
+
+#play-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+ 
+    #doors{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+}
